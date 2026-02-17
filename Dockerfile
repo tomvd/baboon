@@ -8,7 +8,7 @@ RUN chmod +x gradlew && sed -i 's/\r$//' gradlew && ./gradlew --no-daemon depend
 COPY src/ src/
 RUN ./gradlew --no-daemon shadowJar
 
-FROM eclipse-temurin:21-jre
+FROM eclipse-temurin:21-jre-alpine
 
 WORKDIR /app
 COPY --from=build /app/build/libs/*-all.jar baboon.jar
