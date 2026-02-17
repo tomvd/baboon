@@ -1,10 +1,10 @@
 services:
-  foosbot:
+  baboon:
     build: .
     env_file: .env
     volumes:
-      - foosbot-data:/data
+      - baboon-data:/data
     restart: unless-stopped
 
 volumes:
-  foosbot-data:
+  baboon-data:

@@ -1,10 +1,10 @@
-# Foosbot - Slack Foosball Matchmaking Bot
+# :monkey_face: Baboon — a Slack Foosball Matchmaking Bot
 
 A Slack bot for office foosball matchmaking and scorekeeping. Manages 2v2 game lobbies, tracks live scores via interactive buttons, posts scoreboard results, and computes weekly player stats.
 
 ## Features
 
-- **Matchmaking Lobby** — `@foosbot play` creates/joins a lobby with team assignment, position switching, and shuffle
+- **Matchmaking Lobby** — `@baboon play` creates/joins a lobby with team assignment, position switching, and shuffle
 - **Live Scoring** — Interactive buttons for each player to track goals in real-time
 - **Game Rules** — Win condition: 11+ goals with 2+ goal lead
 - **Scoreboard** — Post-game summary with winners, goals per player, and game duration
@@ -18,7 +18,7 @@ A Slack bot for office foosball matchmaking and scorekeeping. Manages 2v2 game l
 ## Slack App Setup
 
 1. Go to [api.slack.com/apps](https://api.slack.com/apps) and click **Create New App** → **From scratch**
-2. Name it `foosbot` and select your workspace
+2. Name it `baboon` and select your workspace
 
 ### Bot Token Scopes (OAuth & Permissions)
 Add these **Bot Token Scopes**:
@@ -43,7 +43,7 @@ Enable **Events** and subscribe to:
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url> && cd foosbot
+   git clone <repo-url> && cd baboon
    ```
 
 2. Create your `.env` file:
@@ -66,12 +66,12 @@ Enable **Events** and subscribe to:
 
 | Command | Description |
 |---------|-------------|
-| `@foosbot play` | Start or join a foosball game |
-| `@foosbot stats` | Show weekly player statistics |
+| `@baboon play` | Start or join a foosball game |
+| `@baboon stats` | Show weekly player statistics |
 
 ### Game Flow
-1. Someone mentions `@foosbot play` — a lobby is created
-2. Others mention `@foosbot play` to join (4 players needed)
+1. Someone mentions `@baboon play` — a lobby is created
+2. Others mention `@baboon play` to join (4 players needed)
 3. Players can **Switch Positions** (F/G) and **Shuffle Teams**
 4. All 4 players hit **Ready** to start the game
 5. During the game, click player buttons to add goals
@@ -85,7 +85,7 @@ Enable **Events** and subscribe to:
 ```bash
 ./gradlew build
 ./gradlew shadowJar
-java -jar build/libs/foosbot-1.0.0-all.jar
+java -jar build/libs/baboon-1.0.0-all.jar
 ```
 
 ### Tech Stack

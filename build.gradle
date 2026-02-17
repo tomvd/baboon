@@ -5,7 +5,7 @@ plugins {
     id 'io.micronaut.application' version '4.4.4'
 }
 
-group = 'com.foosbot'
+group = 'com.baboon'
 version = '1.0.0'
 
 java {
@@ -45,7 +45,7 @@ dependencies {
 }
 
 application {
-    mainClass.set('com.foosbot.Application')
+    mainClass.set('com.baboon.Application')
 }
 
 micronaut {
@@ -53,7 +53,7 @@ micronaut {
     runtime 'netty'
     processing {
         incremental true
-        annotations 'com.foosbot.*'
+        annotations 'com.baboon.*'
     }
 }
 

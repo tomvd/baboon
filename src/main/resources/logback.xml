@@ -5,7 +5,7 @@
         </encoder>
     </appender>
 
-    <logger name="com.foosbot" level="DEBUG"/>
+    <logger name="com.baboon" level="DEBUG"/>
     <logger name="com.slack.api" level="INFO"/>
 
     <root level="INFO">

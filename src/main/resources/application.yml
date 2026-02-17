@@ -1,12 +1,12 @@
 micronaut:
   application:
-    name: foosbot
+    name: baboon
   server:
     port: -1
 
 datasources:
   default:
-    url: jdbc:sqlite:${FOOSBOT_DB_PATH:./foosbot.db}
+    url: jdbc:sqlite:${BABOON_DB_PATH:./baboon.db}
     driver-class-name: org.sqlite.JDBC
     maximum-pool-size: 1
 

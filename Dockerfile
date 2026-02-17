@@ -11,10 +11,10 @@ RUN ./gradlew --no-daemon shadowJar
 FROM eclipse-temurin:21-jre
 
 WORKDIR /app
-COPY --from=build /app/build/libs/*-all.jar foosbot.jar
+COPY --from=build /app/build/libs/*-all.jar baboon.jar
 
 RUN mkdir -p /data
 
-ENV FOOSBOT_DB_PATH=/data/foosbot.db
+ENV BABOON_DB_PATH=/data/baboon.db
 
-ENTRYPOINT ["java", "-jar", "foosbot.jar"]
+ENTRYPOINT ["java", "-jar", "baboon.jar"]
