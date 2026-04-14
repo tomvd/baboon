@@ -2,7 +2,7 @@ micronaut:
   application:
     name: baboon
   server:
-    port: -1
+    port: ${PORT:8080}
 
 datasources:
   default:
